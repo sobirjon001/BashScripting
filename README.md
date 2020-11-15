@@ -1,0 +1,1 @@
+This is my exercise learning bash scripting. This repository could contain examples from another GitHub repositories as example of bash scripting. They will include their readme.md files with all license and author and property info inside their folders.
