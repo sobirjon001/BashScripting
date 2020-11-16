@@ -29,7 +29,7 @@ CHOICE=$(dialog --clear \
                 2>&1 >/dev/tty)
         if [ "$?" -eq 0 ]; then
 case $CHOICE in
-        1) ##Computer Maintenance Menu
+    1) ##Computer Maintenance Menu
 	  while [[ 1 ]]
 	  do
 	  clear;
@@ -400,7 +400,7 @@ case $CHOICE in
 				dialog \
 			      --infobox "cancelled..." 3 15;
 			      sleep 1;
-			      fi ##YESNO end 
+			      fi ##YESNO end
 			elif [ "$?" -eq 1 ]; then ##inputbox cancel
 			    dialog \
 			      --infobox "cancelled..." 3 15;
@@ -568,7 +568,7 @@ case $CHOICE in
 		      "${OPTIONS[@]}" \
 		      2>&1 >/dev/tty)
 		      if [ "$?" -eq 0 ]; then ##Okay Nvidia Prime-select
-			case $CHOICE in 
+			case $CHOICE in
 		      1) ##select Nvidia GPU
 		      clear;
 			sudo prime-select nvidia;
@@ -665,7 +665,7 @@ case $CHOICE in
 		      $HEIGHT $WIDTH $CHOICE_HEIGHT \
 		      "${OPTIONS[@]}" \
 		      2>&1 >/dev/tty) ##Main Menu
-		      if [ "$?" -eq 0 ]; then ## Okay Computer Maintenance 
+		      if [ "$?" -eq 0 ]; then ## Okay Computer Maintenance
 			  case $CHOICE in
 			  1) ##Get Support
                 dpkg -s irssi &> /dev/null; #Check's if irssi is installed
@@ -756,7 +756,7 @@ case $CHOICE in
                 fi ##end
 			  ;;
 			  2) ## Set Up Wifi Usb Adapt-geter
-			  while [[ 1 ]] 
+			  while [[ 1 ]]
                 do
                     clear;
                     HEIGHT=18
@@ -782,7 +782,7 @@ case $CHOICE in
                         --menu "$MENU" \
                         $HEIGHT $WIDTH $CHOICE_HEIGHT \
                         "${OPTIONS[@]}" \
-                        2>&1 >/dev/tty)            
+                        2>&1 >/dev/tty)
                     if [ "$?" -eq 0 ]; then ##Okay PMP Wifi
                     case $CHOICE in
                     1) ##Quick WiFi Installer
@@ -1045,7 +1045,7 @@ case $CHOICE in
                     elif [ "$?" -eq 1 ]; then ##CANCEL PMP Wifi
                     break;
                 fi
-              done   
+              done
 			  ;;
 			  3)
 			  while [[ 1 ]]
@@ -1150,7 +1150,7 @@ case $CHOICE in
 			  clear;
 			  ;;
 			  esac
-		      elif [ "$?" -eq 1 ]; then ##Cancel Computer Maintenance 
+		      elif [ "$?" -eq 1 ]; then ##Cancel Computer Maintenance
 		      clear;
 		      break;
 		      fi
@@ -1391,7 +1391,7 @@ case $CHOICE in
                             fi
                 fi
 		    ;;
-		    7) ##System Monitor / CPU INFO 
+		    7) ##System Monitor / CPU INFO
 		    while [[ 1 ]]
 		      do
 		    HEIGHT=12
@@ -1411,7 +1411,7 @@ case $CHOICE in
 		    "${OPTIONS[@]}" \
 		    2>&1 >/dev/tty)
 		    if [ "$?" -eq 0 ]; then
-			case $CHOICE in 
+			case $CHOICE in
 			    1)
 				  dialog --clear \
 				  --backtitle "$BACKTITLE / General CPU Information" \
@@ -2038,7 +2038,7 @@ case $CHOICE in
                                                     printf "\nPress Enter to return to the Program\n";read
                                                 elif [ "$?" -eq 1 ]; then ##Cancel Virtualbox
                                                     clear;
-                                                fi  
+                                                fi
                                             ;;
                                             2)
                                                 dialog --clear \
@@ -2055,7 +2055,7 @@ case $CHOICE in
                                                     printf "\nPress Enter to return to the Program\n";read
                                                 elif [ "$?" -eq 1 ]; then ##Cancel Wine
                                                     clear;
-                                                fi  
+                                                fi
                                             ;;
                                             3)
                                                 dialog --clear \
@@ -2072,7 +2072,7 @@ case $CHOICE in
                                                     printf "\nPress Enter to return to the Program\n";read
                                                 elif [ "$?" -eq 1 ]; then ##Cancel XTerm
                                                     clear;
-                                                fi  
+                                                fi
                                             ;;
                                             4)
                                                 break 3;
@@ -2081,19 +2081,19 @@ case $CHOICE in
                                     elif [ "$?" -eq 1 ]; then ##Cancel in Accessories Page 3
                                         break;
                                     fi
-                                    done 
+                                    done
                                     ;;
                                 esac
                             elif [ "$?" -eq 1 ]; then ##Cancel in Accessories Page 2
                                 break;
                             fi
-                            done 
+                            done
                         ;;
                     esac
                     elif [ "$?" -eq 1 ]; then ##Cancel in Accessories
                     break;
                     fi
-                    done 
+                    done
             ;;
             2)
                 while [[ 1 ]]
@@ -2134,7 +2134,7 @@ case $CHOICE in
                                     printf "\nPress Enter to return to the Program\n";read
                                 elif [ "$?" -eq 1 ]; then ##Cancel Orca
                                     clear;
-                                fi  
+                                fi
                             ;;
                             2)
                                 dialog --clear \
@@ -2151,7 +2151,7 @@ case $CHOICE in
                                     printf "\nPress Enter to return to the Program\n";read
                                 elif [ "$?" -eq 1 ]; then ##Cancel Onboard
                                     clear;
-                                fi  
+                                fi
                             ;;
                             3)
                                 dialog --clear \
@@ -2168,7 +2168,7 @@ case $CHOICE in
                                     printf "\nPress Enter to return to the Program\n";read
                                 elif [ "$?" -eq 1 ]; then ##Cancel XZoom
                                     clear;
-                                fi  
+                                fi
                             ;;
                             4)
                                 dialog --clear \
@@ -2185,7 +2185,7 @@ case $CHOICE in
                                     printf "\nPress Enter to return to the Program\n";read
                                 elif [ "$?" -eq 1 ]; then ##Cancel Simon
                                     clear;
-                                fi  
+                                fi
                             ;;
                             5)
                                 dialog --clear \
@@ -2202,7 +2202,7 @@ case $CHOICE in
                                     printf "\nPress Enter to return to the Program\n";read
                                 elif [ "$?" -eq 1 ]; then ##Cancel EviaCam
                                     clear;
-                                fi 
+                                fi
                             ;;
                             6)
                                 dialog --clear \
@@ -2219,7 +2219,7 @@ case $CHOICE in
                                     printf "\nPress Enter to return to the Program\n";read
                                 elif [ "$?" -eq 1 ]; then ##Cancel Florence
                                     clear;
-                                fi  
+                                fi
                             ;;
                         esac
                     elif [ "$?" -eq 1 ]; then ##Cancel in Accessibility
@@ -2270,7 +2270,7 @@ case $CHOICE in
                                     printf "\nPress Enter to return to the Program\n";read
                                 elif [ "$?" -eq 1 ]; then ##Cancel Achilles
                                     clear;
-                                fi 
+                                fi
                             ;;
                             2)
                                 dialog --clear \
@@ -2287,7 +2287,7 @@ case $CHOICE in
                                     printf "\nPress Enter to return to the Program\n";read
                                 elif [ "$?" -eq 1 ]; then ##Cancel Amide
                                     clear;
-                                fi 
+                                fi
                             ;;
                             3)
                                 dialog --clear \
@@ -2304,7 +2304,7 @@ case $CHOICE in
                                     printf "\nPress Enter to return to the Program\n";read
                                 elif [ "$?" -eq 1 ]; then ##Cancel Artikulate
                                     clear;
-                                fi 
+                                fi
                             ;;
                             4)
                                 dialog --clear \
@@ -2321,7 +2321,7 @@ case $CHOICE in
                                     printf "\nPress Enter to return to the Program\n";read
                                 elif [ "$?" -eq 1 ]; then ##Cancel AWeather
                                     clear;
-                                fi 
+                                fi
                             ;;
                             5)
                                 dialog --clear \
@@ -2338,7 +2338,7 @@ case $CHOICE in
                                     printf "\nPress Enter to return to the Program\n";read
                                 elif [ "$?" -eq 1 ]; then ##Cancel Biogenesis
                                     clear;
-                                fi 
+                                fi
                             ;;
                             6)
                                 dialog --clear \
@@ -2355,7 +2355,7 @@ case $CHOICE in
                                     printf "\nPress Enter to return to the Program\n";read
                                 elif [ "$?" -eq 1 ]; then ##Cancel ControlAura
                                     clear;
-                                fi 
+                                fi
                             ;;
                             7)
                                 dialog --clear \
@@ -2389,7 +2389,7 @@ case $CHOICE in
                                     printf "\nPress Enter to return to the Program\n";read
                                 elif [ "$?" -eq 1 ]; then ##Cancel Freediams
                                     clear;
-                                fi 
+                                fi
                             ;;
                             9)
                                 dialog --clear \
@@ -2406,7 +2406,7 @@ case $CHOICE in
                                     printf "\nPress Enter to return to the Program\n";read
                                 elif [ "$?" -eq 1 ]; then ##Cancel Genius
                                     clear;
-                                fi 
+                                fi
                             ;;
                             10)
                                 while [[ 1 ]]
@@ -2451,7 +2451,7 @@ case $CHOICE in
                                             printf "\nPress Enter to return to the Program\n";read
                                         elif [ "$?" -eq 1 ]; then ##Cancel Glogic
                                             clear;
-                                        fi 
+                                        fi
                                         ;;
                                         2)
                                         dialog --clear \
@@ -2466,7 +2466,7 @@ case $CHOICE in
                                             printf "==========================================\n| Install Software                       |\n==========================================\n";
                                             sudo apt-get install gpredict;
                                             printf "\nPress Enter to return to the Program\n";read
-                                        elif [ "$?" -eq 1 ]; then ##Cancel Gpredict 
+                                        elif [ "$?" -eq 1 ]; then ##Cancel Gpredict
                                             clear;
                                         fi
                                         ;;
@@ -2904,7 +2904,7 @@ case $CHOICE in
                                             elif [ "$?" -eq 1 ]; then ##Cancel in Education Page 4
                                                 break;
                                             fi
-                                            done 
+                                            done
                                             ;;
                                             esac
                                         elif [ "$?" -eq 1 ]; then ##Cancel in Education Page 3
@@ -3171,7 +3171,7 @@ case $CHOICE in
                                     dialog --title "Install" \
                                            --backtitle "$BACKTITLE" \
                                            --yesno "Do you want to install Okular?" 6 33;
-                                    if [ "$?" -eq 0 ]; then ##Okay Okular 
+                                    if [ "$?" -eq 0 ]; then ##Okay Okular
                                         clear;
                                         printf "==========================================\n| Install Software                       |\n==========================================\n";
                                         sudo apt-get install okular;
@@ -3195,7 +3195,7 @@ case $CHOICE in
                                         printf "\nPress Enter to return to the Program\n";read
                                     elif [ "$?" -eq 1 ]; then ##Cancel OpenMolar
                                         clear;
-                                    fi 
+                                    fi
                                     ;;
                                     5)
                                     dialog --clear \
@@ -3555,7 +3555,7 @@ case $CHOICE in
                             elif [ "$?" -eq 1 ]; then ##Cancel in Chat
                                 break;
                             fi
-                            done   
+                            done
                             ;;
                         esac
                     elif [ "$?" -eq 1 ]; then ##Cancel in Internet Page
@@ -3667,7 +3667,7 @@ case $CHOICE in
                             dialog --title "Install" \
                                    --backtitle "$BACKTITLE" \
                                    --yesno "Do you want to install Brasero CD/DVD Burner?" 6 33;
-                            if [ "$?" -eq 0 ]; then ##Okay Brasero 
+                            if [ "$?" -eq 0 ]; then ##Okay Brasero
                                 clear;
                                 printf "==========================================\n| Install Software                       |\n==========================================\n";
                                 sudo apt-get install brasero;
@@ -3684,7 +3684,7 @@ case $CHOICE in
                             dialog --title "Install" \
                                    --backtitle "$BACKTITLE" \
                                    --yesno "Do you want to install Buzztrax Music Composer?" 6 33;
-                            if [ "$?" -eq 0 ]; then ##Okay Buzztrax 
+                            if [ "$?" -eq 0 ]; then ##Okay Buzztrax
                                 clear;
                                 printf "==========================================\n| Install Software                       |\n==========================================\n";
                                 sudo apt-get install buzztrax;
@@ -3701,7 +3701,7 @@ case $CHOICE in
                             dialog --title "Install" \
                                    --backtitle "$BACKTITLE" \
                                    --yesno "Do you want to install Cheese?" 6 33;
-                            if [ "$?" -eq 0 ]; then ##Okay Cheese 
+                            if [ "$?" -eq 0 ]; then ##Okay Cheese
                                 clear;
                                 printf "==========================================\n| Install Software                       |\n==========================================\n";
                                 sudo apt-get install cheese;
@@ -3814,7 +3814,7 @@ case $CHOICE in
                                         dialog --title "Install" \
                                                --backtitle "$BACKTITLE" \
                                                --yesno "Do you want to install Guvcview GTK+ UVC Viewer?" 6 33;
-                                        if [ "$?" -eq 0 ]; then ##Okay Guvcview 
+                                        if [ "$?" -eq 0 ]; then ##Okay Guvcview
                                             clear;
                                             printf "==========================================\n| Install Software                       |\n==========================================\n";
                                             sudo apt-get install guvcview;
@@ -4823,7 +4823,7 @@ case $CHOICE in
                             elif [ "$?" -eq 1 ]; then ##Cancel in Arcade
                                 break;
                             fi
-                            done 
+                            done
                             ;;
                             2)
                             while [[ 1 ]]
@@ -4991,7 +4991,7 @@ case $CHOICE in
                             elif [ "$?" -eq 1 ]; then ##Cancel in Board Games
                                 break;
                             fi
-                            done 
+                            done
                             ;;
                             3)
                             while [[ 1 ]]
@@ -5069,7 +5069,7 @@ case $CHOICE in
                             elif [ "$?" -eq 1 ]; then ##Cancel in Card Games
                                 break;
                             fi
-                            done 
+                            done
                             ;;
                             4)
                             while [[ 1 ]]
@@ -5255,7 +5255,7 @@ case $CHOICE in
                             elif [ "$?" -eq 1 ]; then ##Cancel in Puzzels
                                 break;
                             fi
-                            done 
+                            done
                             ;;
                             5)
                             while [[ 1 ]]
@@ -5315,7 +5315,7 @@ case $CHOICE in
                             elif [ "$?" -eq 1 ]; then ##
                                 break;
                             fi
-                            done 
+                            done
                             ;;
                             6)
                             while [[ 1 ]]
@@ -5411,7 +5411,7 @@ case $CHOICE in
                             elif [ "$?" -eq 1 ]; then ##Cancel in Simulation
                                 break;
                             fi
-                            done 
+                            done
                             ;;
                             7)
                             while [[ 1 ]]
@@ -5507,7 +5507,7 @@ case $CHOICE in
                             elif [ "$?" -eq 1 ]; then ##Cancel in Sports
                                 break;
                             fi
-                            done 
+                            done
                             ;;
                         esac
                     elif [ "$?" -eq 1 ]; then ##Cancel in Games
@@ -6225,7 +6225,7 @@ case $CHOICE in
 #   -r can be 0 to mean "no limit".
 #   Reset cursor visibility after done.
 #   Cleanup for those people who want to quit with ^C
-#			
+#
 #   Pushed the changes to https://gist.github.com/4725048
 
 p=1
@@ -6444,7 +6444,7 @@ done
 ;;
 3)
 #!/bin/bash
-echo -e "\033[2J\033[?25l"; R=`tput lines` C=`tput cols`;: $[R--] ; while true 
+echo -e "\033[2J\033[?25l"; R=`tput lines` C=`tput cols`;: $[R--] ; while true
 do ( e=echo\ -e s=sleep j=$[RANDOM%C] d=$[RANDOM%R];for i in `eval $e {1..$R}`;
 do c=`printf '\\\\0%o' $[RANDOM%57+33]` ### http://bruxy.regnet.cz/web/linux ###
 $e "\033[$[i-1];${j}H\033[32m$c\033[$i;${j}H\033[37m"$c; $s 0.1;if [ $i -ge $d ]
@@ -6540,7 +6540,7 @@ do echo -e "\033[$i;${j}f ";$s 0.1;done)& sleep 0.05;done #(c) 2011 -- [ BruXy ]
                 tag_key_selected_color = (WHITE,MAGENTA,ON)" > .dialogrc
                 ;;
                 esac
-                elif [ "$?" -eq 1 ]; then ##Cancel 
+                elif [ "$?" -eq 1 ]; then ##Cancel
                 break;
                 fi
                 done
@@ -6577,7 +6577,7 @@ do echo -e "\033[$i;${j}f ";$s 0.1;done)& sleep 0.05;done #(c) 2011 -- [ BruXy ]
                 2>&1 >/dev/tty)
                 clear;
                 if [ "$?" -eq 0 ]; then ##OK Games
-		case $CHOICE in  
+		case $CHOICE in
 		1)
 	    ##############################################################################
 	    #                                                                            #
@@ -6603,7 +6603,7 @@ do echo -e "\033[$i;${j}f ";$s 0.1;done)& sleep 0.05;done #(c) 2011 -- [ BruXy ]
 	    C=2                   # game cycle
 	    declare -A FOOD
 	    _STTY=$(stty -g)      # Save current terminal setup
-	    printf "\e[?25l"      # Turn of cursor 
+	    printf "\e[?25l"      # Turn of cursor
 	    printf "\e]0;HOUSENKA\007"
 	    stty -echo -icanon
 	    USER=$(whoami)
@@ -6643,17 +6643,17 @@ do echo -e "\033[$i;${j}f ";$s 0.1;done)& sleep 0.05;done #(c) 2011 -- [ BruXy ]
 		x=$[RANDOM % (MW-2) + 2]
 		y=$[RANDOM % (MH-2) + 2]
 		# check if leaf position is unique
-		if [ $(echo ${!FOOD[@]} | tr ' ' '\n' | grep -c "^$y;$x$") -gt 0 ] 
+		if [ $(echo ${!FOOD[@]} | tr ' ' '\n' | grep -c "^$y;$x$") -gt 0 ]
 		then
 			: $[i--]
 			continue
 		fi
 		food=$[i & 1] # 0 -- poison, 1 -- leaf
 		FOOD["$y;$x"]=$food
-		if [ $food -eq 1 ] ; then 
+		if [ $food -eq 1 ] ; then
 			printf "\e[$y;${x}f\e[1;32m♧\e[0m";
-		else 
-			printf "\e[$y;${x}f\e[1;31m☠\e[0m"; 
+		else
+			printf "\e[$y;${x}f\e[1;31m☠\e[0m";
 		fi
 	    done
 	    }
@@ -6665,16 +6665,16 @@ do echo -e "\033[$i;${j}f ";$s 0.1;done)& sleep 0.05;done #(c) 2011 -- [ BruXy ]
 	if [ "${FOOD["$HY;$HX"]}" == "1" ] ; then
 		unset FOOD["$HY;$HX"]
 		: $[FOOD_NUMBER--] $[SCORE++]
-		((FOOD_NUMBER==0)) && return 
-	elif [ "${FOOD["$HY;$HX"]}" == "0" ] ; then 
+		((FOOD_NUMBER==0)) && return
+	elif [ "${FOOD["$HY;$HX"]}" == "0" ] ; then
 		DEATH=1
 	else
 		first=$(get_first HOUSENKA)
 		printf "\e[${HOUSENKA[$first]}f "
-		unset HOUSENKA[$first]			
+		unset HOUSENKA[$first]
 	fi
 	# do not break into wall
-	if [ $HY -le 1 ] || [ $HY -ge $MH ] || [ $HX -le 1 ] || [ $HX -ge $MW ] 
+	if [ $HY -le 1 ] || [ $HY -ge $MH ] || [ $HX -le 1 ] || [ $HX -ge $MW ]
 	then
 		DEATH=2
 	fi
@@ -6692,7 +6692,7 @@ do echo -e "\033[$i;${j}f ";$s 0.1;done)& sleep 0.05;done #(c) 2011 -- [ BruXy ]
 	function game_over() {
 	trap : ALRM # disable interupt
 	printf "\a"
-	centered_window 34 ${#GAME_OVER[@]} GAME_OVER 
+	centered_window 34 ${#GAME_OVER[@]} GAME_OVER
 	if [ $SCORE -gt $TOP_SCORE ] ; then
 		echo $SCORE > $CONFIG
 		TOP_SCORE=$SCORE
@@ -6710,8 +6710,8 @@ do echo -e "\033[$i;${j}f ";$s 0.1;done)& sleep 0.05;done #(c) 2011 -- [ BruXy ]
 	ul=$y";"$x
 	bl=$[y+h+1]";"$x
 	printf "\e[${ul}f┌"; printf '─%.0s' $(eval echo {1..$w}); printf '┐\n'
-	for i in $(eval echo {0..$h}); 
-	do 
+	for i in $(eval echo {0..$h});
+	do
 		printf "\e[$[y+i+1];${x}f│";
 		echo -en "$(eval printf \"%s\" \"\${$3[\$i]}\")"
 		printf "\e[$[y+i+1];$[x+w+1]f│";
@@ -6731,12 +6731,12 @@ do echo -e "\033[$i;${j}f ";$s 0.1;done)& sleep 0.05;done #(c) 2011 -- [ BruXy ]
 	case "$KEY" in
 		A) HY=$[HY-1] ;; # Up
 		B) HY=$[HY+1] ;; # Down
-		C) HX=$[HX+1] ;; # Right	
+		C) HX=$[HX+1] ;; # Right
 		D) HX=$[HX-1] ;; # Left
 	esac
 
 	HOUSENKA[$C]="$HY;$HX"
-	: $[C++]	
+	: $[C++]
 	game_info
 	}
 
@@ -6765,8 +6765,8 @@ do echo -e "\033[$i;${j}f ";$s 0.1;done)& sleep 0.05;done #(c) 2011 -- [ BruXy ]
 	gen_food
 	HX=$[MW/2] HY=$[MH/2]  # start position in the middle of the screen
 	# body initialization
-	HOUSENKA=([0]="$[HY-2];$HX" [1]="$[HY-1];$HX" [2]="$HY;$HX") 
-	KEY='' 
+	HOUSENKA=([0]="$[HY-2];$HX" [1]="$[HY-1];$HX" [2]="$HY;$HX")
+	KEY=''
 	C=2
 	trap move ALRM
 	}
@@ -6791,12 +6791,12 @@ do echo -e "\033[$i;${j}f ";$s 0.1;done)& sleep 0.05;done #(c) 2011 -- [ BruXy ]
 	Q+3t/mIXWLjCLuLwg1WEYiUo038wzoqSHpSaSOKUde7LhfHRdQzqlxs3rJKmOROc
 	o6Y6ZDm+THkzMzIdPXzUOo4RVH/xdyRThQkGMw1D8A=="
 	SCR=`echo "$TITLE" | base64 -d | bzcat` #unpack main screen
-	local i j IFS=$'\n' 
+	local i j IFS=$'\n'
 	clear
 	# center on screen
 	for ((j=0;j<$[(MH-25)/2];j++)) do echo; done
 	for i in $SCR
-	do	
+	do
 		for ((j=0;j<$[(MW-63)/2];j++)) do echo -n " "; done
 		printf "%s\n" $i
 	done
@@ -6813,7 +6813,7 @@ do echo -e "\033[$i;${j}f ";$s 0.1;done)& sleep 0.05;done #(c) 2011 -- [ BruXy ]
 	########
 
 	exec 2>/dev/null
-	trap at_exit ERR EXIT 
+	trap at_exit ERR EXIT
 	if [ -f $CONFIG ] ; then
 	TOP_SCORE=$(cat $CONFIG)
 	else
@@ -6833,7 +6833,7 @@ do echo -e "\033[$i;${j}f ";$s 0.1;done)& sleep 0.05;done #(c) 2011 -- [ BruXy ]
 # A tetromino stacking game written entirely in BASH script! =D
 #
 # Because I can...
-# 
+#
 #-----------------------------------------------------------------------------
 # Version 0.1 Beta:
 #	- The game is functional
@@ -6886,7 +6886,7 @@ declare -i GAMESCOREMULTINC=100	# Score Multiplier increase per level
 declare -i GAMELEVEL=0			# Game level
 declare -i GAMELINES=0			# Number of lines cleared
 declare -i GAMELINESPERLEVEL=10	# Number of lines that need to be cleared to advance in level
-declare -i GAMELEVELLINES=0		# Number of lines cleared this level	
+declare -i GAMELEVELLINES=0		# Number of lines cleared this level
 declare -i GAMEFAILUREMAX=10	# NUmber of blocks to place after failure before showing Game Over message
 declare -i GAMEFAILURECOUNT=0	# Number of blocks placed on top of eachother
 declare -i GAMEFAILURE=0		# Indicates a game is determined to be lost
@@ -6907,7 +6907,7 @@ declare -i GAMECLEARANIMFRAMES=3	# Number of frames of clearing animation
 declare -r GAMECLEARCHAR=":"
 
 declare -i GAMEBLOCKX=0			# X position of active game block relative to terminal
-declare -i GAMEBLOCKY=0			# Y position of active game block relative to terminal		
+declare -i GAMEBLOCKY=0			# Y position of active game block relative to terminal
 declare -i GAMEBLOCKAPX=0		# X position of active game block relative to the play area
 declare -i GAMEBLOCKAPY=0		# Y position of active game block relative to the play area
 
@@ -7134,7 +7134,7 @@ function DrawBorder()
 	done
 
 	printf "\e[%d;%dH${BBL}" $(($2 + $4 - 1)) $1
-	
+
 	for((i=0; i<BWIDTH; i++)); do
 	{
 		printf "${BH}"
@@ -7155,7 +7155,7 @@ function DrawTetriBashArray()
 		for((j=0; j<TBASHW; j++)); do
 		{
 			BLAPOS=$((($i * $TBASHW) + $j))
-			
+
 			case ${TBASHARRAY[$BLAPOS]} in
 				1) printf "\e[%d;%dH${BLK1}\e[0m" $(($TBASHOFFSETY + $i)) $(($TBASHOFFSETX + ($j * 2)));;
 				2) printf "\e[%d;%dH${BLK2}\e[0m" $(($TBASHOFFSETY + $i)) $(($TBASHOFFSETX + ($j * 2)));;
@@ -7183,7 +7183,7 @@ function DrawTetriBashArrayEx()
 		for((j=0; j<TBASHW; j++)); do
 		{
 			BLAPOS=$((($i * $TBASHW) + $j))
-			
+
 			case ${TBASHARRAY[$BLAPOS]} in
 				0) printf "\e[%d;%dH  \e[0m" $(($TBASHOFFSETY + $i)) $(($TBASHOFFSETX + ($j * 2)));;
 				1) printf "\e[%d;%dH${BLK1}\e[0m" $(($TBASHOFFSETY + $i)) $(($TBASHOFFSETX + ($j * 2)));;
@@ -7283,7 +7283,7 @@ function HUDUpdateNext()
 		for((j=0; j<GAMEBLOCKSIZE; j++)); do
 		{
 			BLAPOS=$((($i * $GAMEBLOCKSIZE) + $j))
-			
+
 			case ${GAMENEXTARRAY[$BLAPOS]} in
 				0) printf "\e[0m  ";;
 				1) printf "${BLK1}";;
@@ -7297,7 +7297,7 @@ function HUDUpdateNext()
 			esac
 		}
 		done
-		
+
 		VY=$(($VY + 1))
 		printf "\e[%d;%dH" $VY $TBASHNEXTVALUEX
 	}
@@ -7394,7 +7394,7 @@ function DrawTetriBashMainMenu()
 		fi
 	}
 	done
-	
+
 	FRAMEUPDATED=1
 }
 
@@ -7405,7 +7405,7 @@ function SetMainMenuSelection()
 		return 1
 	}
 	fi
-	
+
 	if [ $1 -lt 0 ] || [ $1 -ge $MAINMENUITEMCOUNT ]; then
 	{
 		return 1
@@ -7417,7 +7417,7 @@ function SetMainMenuSelection()
 		return 0
 	}
 	fi
-	
+
 	printf "\e[%d;%dH${MAINMENUITEMNOTSEL}${MAINMENUITEMS[$MAINMENUSELECTION]}" ${MAINMENUITEMY[$MAINMENUSELECTION]} $MAINMENUX
 	MAINMENUSELECTION=$1
 	printf "\e[%d;%dH${MAINMENUITEMSELECT}${MAINMENUITEMS[$MAINMENUSELECTION]}" ${MAINMENUITEMY[$MAINMENUSELECTION]} $MAINMENUX
@@ -7429,7 +7429,7 @@ function SetMainMenuSelection()
 function ChangeMainMenuSelectionUp()
 {
 	local NEXTITEM=$MAINMENUSELECTION
-	
+
 	if [ $NEXTITEM -eq 0 ]; then
 	{
 		NEXTITEM=$(($MAINMENUITEMCOUNT - 1))
@@ -7439,14 +7439,14 @@ function ChangeMainMenuSelectionUp()
 		NEXTITEM=$(($NEXTITEM - 1))
 	}
 	fi
-	
+
 	SetMainMenuSelection $NEXTITEM
 }
 
 function ChangeMainMenuSelectionDown()
 {
 	local NEXTITEM=$MAINMENUSELECTION
-	
+
 	if [ $NEXTITEM -eq $(($MAINMENUITEMCOUNT - 1)) ]; then
 	{
 		NEXTITEM=0
@@ -7456,7 +7456,7 @@ function ChangeMainMenuSelectionDown()
 		NEXTITEM=$(($NEXTITEM + 1))
 	}
 	fi
-	
+
 	SetMainMenuSelection $NEXTITEM
 }
 
@@ -7487,7 +7487,7 @@ function GameDrawCurrentBlock()
 		for((j=0; j<GAMEBLOCKSIZE; j++)); do
 		{
 			BLAPOS=$((($i * $GAMEBLOCKSIZE) + $j))
-			
+
 			case ${GAMECURRENTARRAY[$BLAPOS]} in
 				1) printf "\e[%d;%dH${BLK1}\e[0m\e[1;1H" $(($GAMEBLOCKY + $i)) $(($GAMEBLOCKX + ($j * 2)));;
 				2) printf "\e[%d;%dH${BLK2}\e[0m\e[1;1H" $(($GAMEBLOCKY + $i)) $(($GAMEBLOCKX + ($j * 2)));;
@@ -7514,7 +7514,7 @@ function GameClearCurrentBlock()
 		for((j=0; j<GAMEBLOCKSIZE; j++)); do
 		{
 			BLAPOS=$((($i * $GAMEBLOCKSIZE) + $j))
-			
+
 			case ${GAMECURRENTARRAY[$BLAPOS]} in
 				1) printf "\e[%d;%dH\e[0m  \e[1;1H" $(($GAMEBLOCKY + $i)) $(($GAMEBLOCKX + ($j * 2)));;
 				2) printf "\e[%d;%dH\e[0m  \e[1;1H" $(($GAMEBLOCKY + $i)) $(($GAMEBLOCKX + ($j * 2)));;
@@ -7552,19 +7552,19 @@ function GameCommitBlock()
 	{
 		for((j=0; j<GAMEBLOCKSIZE; j++)); do
 		{
-			BLAPOS=$((($i * $GAMEBLOCKSIZE) + $j))			
-			BLKX=$(($j + $GAMEBLOCKAPX))			
-			BLKY=$(($i + $GAMEBLOCKAPY))			
+			BLAPOS=$((($i * $GAMEBLOCKSIZE) + $j))
+			BLKX=$(($j + $GAMEBLOCKAPX))
+			BLKY=$(($i + $GAMEBLOCKAPY))
 
 			if [ $BLKX -lt 0 ] || [ $BLKX -gt $(($TBASHW - 1)) ]; then
 			{
 				continue
 			}
 			fi
-			
+
 			if [ $BLKY -gt $(($TBASHH - 1)) ]; then
 			{
-				continue	
+				continue
 			}
 			fi
 
@@ -7583,7 +7583,7 @@ function GameCommitBlock()
 		done
 	}
 	done
-	
+
 	if [ $GAMEFAILURE -eq 0 ]; then
 	{
 		GAMESCORE=$(($GAMESCORE + 1))
@@ -7638,7 +7638,7 @@ function GameClearLines()
 	DrawTetriBashArrayEx
 	GAMESCORE=$(($GAMESCORE + (($GAMELINESTOCLEAR * ($GAMELEVEL + 1)) * ($GAMESCOREMULT * ($GAMELEVEL + 1)))))
 	GAMELINES=$(($GAMELINES + $GAMELINESTOCLEAR))
-	GAMELEVELLINES=$(($GAMELEVELLINES + $GAMELINESTOCLEAR))	
+	GAMELEVELLINES=$(($GAMELEVELLINES + $GAMELINESTOCLEAR))
 	if [ $GAMELEVELLINES -ge $GAMELINESPERLEVEL ] && [ $GAMELEVEL -lt 10 ]; then
 	{
 		GAMELEVELLINES=$(($GAMELEVELLINES - $GAMELINESPERLEVEL))
@@ -7658,15 +7658,15 @@ function GameDetectLines()
 	local BLKCOUNT=0
 	local LINECLEARS=0
 
-	ZeroLinesBuffer	
-	
+	ZeroLinesBuffer
+
 	for((i=0; i<TBASHH; i++)); do
 	{
 		BLKCOUNT=0
 		for((j=0; j<TBASHW; j++)); do
 		{
 			BLAPOS=$((($i * $TBASHW) + $j))
-			
+
 			if [ ${TBASHARRAY[$BLAPOS]} -gt 0 ]; then
 			{
 				BLKCOUNT=$(($BLKCOUNT + 1))
@@ -7674,7 +7674,7 @@ function GameDetectLines()
 			fi
 		}
 		done
-		
+
 		if [ $BLKCOUNT -eq $TBASHW ]; then
 		{
 			GAMELINESBUFFER[$LINECLEARS]=$i
@@ -7711,7 +7711,7 @@ function GameDrawLineClear()
 		done
 	}
 	done
-	
+
 	FRAMEUPDATED=1
 }
 
@@ -7725,9 +7725,9 @@ function GameCheckMoveLeft()
 	{
 		for((j=0; j<GAMEBLOCKSIZE; j++)); do
 		{
-			BLAPOS=$((($i * $GAMEBLOCKSIZE) + $j))			
-			BLKX=$(($j + $GAMEBLOCKAPX))			
-			BLKY=$(($i + $GAMEBLOCKAPY))			
+			BLAPOS=$((($i * $GAMEBLOCKSIZE) + $j))
+			BLKX=$(($j + $GAMEBLOCKAPX))
+			BLKY=$(($i + $GAMEBLOCKAPY))
 
 			if [ $BLKX -lt 0 ] || [ $BLKX -gt $(($TBASHW - 1)) ]; then
 			{
@@ -7737,7 +7737,7 @@ function GameCheckMoveLeft()
 
 			if [ ${GAMECURRENTARRAY[$BLAPOS]} -gt 0 ]; then
 			{
-				
+
 				if [ $(($BLKX - 1)) -lt 0 ]; then
 				{
 					return 0
@@ -7769,9 +7769,9 @@ function GameCheckMoveRight()
 	{
 		for((j=0; j<GAMEBLOCKSIZE; j++)); do
 		{
-			BLAPOS=$((($i * $GAMEBLOCKSIZE) + $j))			
-			BLKX=$(($j + $GAMEBLOCKAPX))			
-			BLKY=$(($i + $GAMEBLOCKAPY))			
+			BLAPOS=$((($i * $GAMEBLOCKSIZE) + $j))
+			BLKX=$(($j + $GAMEBLOCKAPX))
+			BLKY=$(($i + $GAMEBLOCKAPY))
 
 			if [ $BLKX -lt 0 ] || [ $BLKX -gt $(($TBASHW - 1)) ]; then
 			{
@@ -7781,13 +7781,13 @@ function GameCheckMoveRight()
 
 			if [ ${GAMECURRENTARRAY[$BLAPOS]} -gt 0 ]; then
 			{
-				
+
 				if [ $(($BLKX + 1)) -gt $(($TBASHW - 1)) ]; then
 				{
 					return 0
 				}
 				fi
-				
+
 				if [ ${TBASHARRAY[$((($BLKY * $TBASHW) + $BLKX + 1))]} -gt 0 ]; then
 				{
 					return 0
@@ -7813,9 +7813,9 @@ function GameCheckMoveDown()
 	{
 		for((j=0; j<GAMEBLOCKSIZE; j++)); do
 		{
-			BLAPOS=$((($i * $GAMEBLOCKSIZE) + $j))			
-			BLKX=$(($j + $GAMEBLOCKAPX))			
-			BLKY=$(($i + $GAMEBLOCKAPY))			
+			BLAPOS=$((($i * $GAMEBLOCKSIZE) + $j))
+			BLKX=$(($j + $GAMEBLOCKAPX))
+			BLKY=$(($i + $GAMEBLOCKAPY))
 
 			if [ $BLKX -lt 0 ] || [ $BLKX -gt $(($TBASHW - 1)) ]; then
 			{
@@ -7824,7 +7824,7 @@ function GameCheckMoveDown()
 			fi
 
 			if [ ${GAMECURRENTARRAY[$BLAPOS]} -gt 0 ]; then
-			{	
+			{
 				if [ $(($BLAPOS + $GAMEBLOCKSIZE)) -lt $GAMEBLOCKAREA ]; then
 				{
 					if [ ${GAMECURRENTARRAY[$(($BLAPOS + $GAMEBLOCKSIZE))]} -gt 0 ]; then
@@ -7929,13 +7929,13 @@ function GameCheckRotate()
 	local BLAPOS=0
 	local BLKX=0
 	local BLKY=0
-	
+
 	if [ -z "$1" ]; then
 	{
 		return 0
 	}
 	fi
-	
+
 	if [ $1 -eq 0 ]; then
 	{
 		if [ $GAMECURRENTROT -eq 0 ]; then
@@ -8029,12 +8029,12 @@ function GameCheckRotate()
 	{
 		for((j=0; j<GAMEBLOCKSIZE; j++)); do
 		{
-			BLAPOS=$((($i * $GAMEBLOCKSIZE) + $j))			
-			BLKX=$(($j + $GAMEBLOCKAPX))			
+			BLAPOS=$((($i * $GAMEBLOCKSIZE) + $j))
+			BLKX=$(($j + $GAMEBLOCKAPX))
 			BLKY=$(($i + $GAMEBLOCKAPY))
 
 			if [ ${GAMEBLOCKBUFFER[$BLAPOS]} -gt 0 ]; then
-			{	
+			{
 				if [ $BLKY -gt $(($TBASHH - 1)) ] || [ $BLKX -gt $(($TBASHW - 1)) ] || [ $BLKX -lt 0 ]; then
 				{
 					return 0
@@ -8052,7 +8052,7 @@ function GameCheckRotate()
 		done
 	}
 	done
-	
+
 	GAMECURRENTROT=$NEWROT
 	return 1
 }
@@ -8096,7 +8096,7 @@ function InitGame()
 	GAMENEXT=$(($RANDOM % 7))
 	GAMEINTERVAL="0.5"
 	ACCUMULATOR="0.0"
-	
+
 	ZeroTetriBashArray
 	DrawTetriBashArray
 	GameSetCurrentBlock
@@ -8174,7 +8174,7 @@ SetGameStateMenu
 # Game Loop
 while true; do
 {
-	TIMESTART=$(date +%s.%N)	
+	TIMESTART=$(date +%s.%N)
 
 	KEY=$(dd bs=1 count=1 2> /dev/null; echo ".")
 	KEY=${KEY%.}
@@ -8286,9 +8286,9 @@ while true; do
 	if [ $FRAMEUPDATED -eq 1 ]; then
 	{
 		if [ $TETRIBASHDEBUG -eq 1 ]; then
-		{	
+		{
 			if [ $TETRIBASHSTATE -eq 2 ]; then
-			{	
+			{
 				printf "\e[1;2H\e[1;32mDebug:BlkPos(%d,%d) BlkTerm(%d,%d) Delta(%2.3g) Accu(%2.3g) LC(%d)      \e[0m" $GAMEBLOCKAPX $GAMEBLOCKAPY $GAMEBLOCKX $GAMEBLOCKY $DELTATIME $ACCUMULATOR $GAMECLEARINPROGRESS
 			}
 			fi
@@ -8324,13 +8324,13 @@ by Vidar 'koala_man' Holen
 www.vidarholen.net
 
 Originally an entry in the #linux.no 1KiB compo (thus the ugly source)
-This is a pre-trim version with colors and proper tmp files. All bash. 
+This is a pre-trim version with colors and proper tmp files. All bash.
 Released under the GNU General Public License.
 
-Control your ship with J and L, shoot with K. 
+Control your ship with J and L, shoot with K.
 Quit with Q or sigint.
 
-Requires mktemp and sleep with fractions. 
+Requires mktemp and sleep with fractions.
 
 END
 exit 0
@@ -8369,22 +8369,22 @@ trap z=SigInt SIGINT
  : $((y/=3)) $((x/=6))
  [ "`g $x $y`" = 1 -a $x -le $o -a $x -ge $n -a $y -le $q -a $y -ge 0 ] || $r 0
  [ $Q = 1 ] && z="You win!"
- s $x $y 0 
+ s $x $y 0
  : $((Q--))
  T=0
  $r 1
 }
  a() {
  w n +
- w o - 
- h 
+ w o -
+ h
 }
  w() {
  d=0
  for (( I=0; I<=q; I++ )) {
   [ `g $(($1)) $I` = 1 ] && D=1
  }
- [ $D = 0 ] && : $(($1$2=1)) 
+ [ $D = 0 ] && : $(($1$2=1))
 }
  h() {
 for (( I=q; I>=0; I--)) {
@@ -8393,8 +8393,8 @@ for (( J=n; J<=o; J++)) {
   }
  }
  }
- 
- j() { 
+
+ j() {
  while read -n 1 S >/dev/null 2>&1
 do
 $e $S > $M
@@ -8414,7 +8414,7 @@ Y=2
 Z=2
 U=2
 W=0
-for (( Q=0; Q<24; Q++)) { 
+for (( Q=0; Q<24; Q++)) {
  K[$Q]=1
 }
 
@@ -8423,8 +8423,8 @@ B=$!
 
 until [ "$z" ]
 do
- : $((W++)) 
- if [ -f $M ] 
+ : $((W++))
+ if [ -f $M ]
  then
   i=$(<$M)
   rm $M
@@ -8432,28 +8432,28 @@ do
    q) z="Quit" ;;
    j) X=$(($X-3)) ;;
    l) X=$(($X+3)) ;;
-   k) [ $T = 0 ] && S=$((X+1)) && T=22 
+   k) [ $T = 0 ] && S=$((X+1)) && T=22
    ;;
   esac
  fi
- rm $N  
+ rm $N
  exec > $N
-for (( J=0; J<=q; J++)) { 
-  for (( I=n; I<=o; I++)) { 
+for (( J=0; J<=q; J++)) {
+  for (( I=n; I<=o; I++)) {
    [ `g $I $J` = 1 ] && m $((I*6+Y)) $((J*3+Z)) && $e `f 4`/00\\
   }
  }
  m $X 23
  $e `f 2`"/|\\"
- [ $T != 0 ] && u  
+ [ $T != 0 ] && u
  a
  m 0 0
  exec > `tty`
 $c
 cat $N
 sleep .1
-[ $((W%2)) = 0 ] && : $((Y+=U)) && if [ $((Y+n*6)) -lt 2 -o $((Y+o*6)) -gt 75 ] 
-then 
+[ $((W%2)) = 0 ] && : $((Y+=U)) && if [ $((Y+n*6)) -lt 2 -o $((Y+o*6)) -gt 75 ]
+then
 : $((U=-U))  $((Z+=2))
 [ $((Z+q*3)) -le 20 ] || z="You lose!"
 fi
@@ -8771,7 +8771,7 @@ sleep 4
 	ballChar="+"
 	state="stop"
 	lifes=3
-	
+
 	bricks=()
 
 	function putBrik {
