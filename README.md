@@ -9,5 +9,9 @@ if [[ 1 ]]; then
   echo "Hello World!"
 fi
 ```
-
-* djnjdnjdn
+### So far my To Do list:
+- [ ] Learn how to style README.md files
+- [ ] Learn how to declare variables in Bash Scripting
+- [ ] Learn how to use loops
+- [ ] Learn how to use if statements
+- [ ] Learn how to use fronted interaction
