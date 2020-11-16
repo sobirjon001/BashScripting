@@ -5,12 +5,12 @@ This is my **exercise** learning bash scripting. This repository could contain e
 Learn here about [Basic writing and formatting syntax](https://docs.github.com/en/free-pro-team@latest/github/writing-on-github/basic-writing-and-formatting-syntax).
 
 ```bash
-if [[ 1 ]]; then
+if [[ 0 ]]; then
   echo "Hello World!"
 fi
 ```
 ### So far my To Do list:
-- [ ] Learn how to style README.md files
+- [x] Learn how to style README.md files
 - [ ] Learn how to declare variables in Bash Scripting
 - [ ] Learn how to use loops
 - [ ] Learn how to use if statements
