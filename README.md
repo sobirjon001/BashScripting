@@ -4,6 +4,8 @@ This is my **exercise** learning bash scripting. This repository could contain e
 
 Learn here about [Basic writing and formatting syntax](https://docs.github.com/en/free-pro-team@latest/github/writing-on-github/basic-writing-and-formatting-syntax).
 
+Press `Ctrl + Shift + M` to toggle README.md **Preview** 
+
 ```bash
 if [[ 0 ]]; then
   echo "Hello World!"
