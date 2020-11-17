@@ -15,8 +15,11 @@
 
        Comprehensive documentation is available in the GNOME Help Browser.
 
+## TITLE:
+[Dialog options](#dialog-options)
+
 ## OPTIONS
-       This program follows the usual GNU command line syntax, with long options starting with two dashes (`-').
+       This program follows the usual GNU command line syntax, with long options starting with two dashes "--".
 
 ## Dialog options
 
