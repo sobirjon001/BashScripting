@@ -15,13 +15,32 @@
 
        Comprehensive documentation is available in the GNOME Help Browser.
 
-## TITLE:
-[Dialog options](#dialog-options)
+#### TITLE:
+- [Dialog options](#dialog-options)
+- [General options](#General-options)
+- [Calendar options](#Calendar-options)
+- [Text entry options](#Text-entry-options)
+- [Error options](#Error-options)
+- [File selection options](#File-selection-options)
+- [Info options](#Info-options)
+- [List options](#List-options)
+- [Notification options](#Notification-options)
+- [Progress options](#Progress-options)
+- [Question options](#Question-options)
+- [Text options](#Text-options)
+- [Warning options](#Warning-options)
+- [Scale options](#Scale-options)
+- [Color selection options](#Color-selection-options)
+- [Password dialog options](#Password-dialog-options)
+- [Forms dialog options](#Forms-dialog-options)
+- [Miscellaneous options](#Miscellaneous-options)
+- [EXAMPLES](#examples)
 
 ## OPTIONS
        This program follows the usual GNU command line syntax, with long options starting with two dashes "--".
 
 ## Dialog options
+[Title](#title)
 
        --calendar
               Display calendar dialog
@@ -67,6 +86,7 @@
               Display forms dialog
 
 ## General options
+[Title](#title)
 
        --title=TITLE
               Set the dialog title
@@ -85,6 +105,7 @@
               Set the dialog timeout in seconds
 
 ## Calendar options
+[Title](#title)
 
        --text=STRING
               Set the dialog text
@@ -103,6 +124,7 @@
               ple %A %d/%m/%y
 
 ## Text entry options
+[Title](#title)
 
        --text=STRING
               Set the dialog text
@@ -114,6 +136,7 @@
               Hide the entry text
 
 ## Error options
+[Title](#title)
 
        --text=STRING
               Set the dialog text
@@ -125,6 +148,7 @@
               Do not enable pango markup
 
 ## File selection options
+[Title](#title)
 
        --filename=FILENAME
               Set the file or directory to be selected by default
@@ -147,6 +171,7 @@
               Sets a filename filter
 
 ## Info options
+[Title](#title)
 
        --text=STRING
               Set the dialog text
@@ -158,6 +183,7 @@
               Do not enable pango markup
 
 ## List options
+[Title](#title)
 
        --text=STRING
               Set the dialog text
@@ -191,6 +217,7 @@
               Hides the column headers
 
 ## Notification options
+[Title](#title)
 
        --text=STRING
               Set the notification text
@@ -201,6 +228,7 @@
               icon: 'error', 'info', 'question', and 'warning'
 
 ## Progress options
+[Title](#title)
 
        --text=STRING
               Set the dialog text
@@ -221,6 +249,7 @@
               Hides the cancel button
 
 ## Question options
+[Title](#title)
 
        --text=STRING
               Set the dialog text
@@ -238,6 +267,7 @@
               Set the text of the cancel button
 
 ## Text options
+[Title](#title)
 
        --filename=FILENAME
               Open file
@@ -255,6 +285,7 @@
               Set the text of the cancel button
 
 ## Warning options
+[Title](#title)
 
        --text=STRING
               Set the dialog text
@@ -266,6 +297,7 @@
               Do not enable pango markup
 
 ## Scale options
+[Title](#title)
 
        --text=STRING
               Set the dialog text
@@ -289,6 +321,7 @@
               Hide value
 
 ## Color selection options
+[Title](#title)
 
        --color=VALUE
               Set the initial color
@@ -297,11 +330,13 @@
               Show the palette
 
 ## Password dialog options
+[Title](#title)
 
        --username
               Display the username field
 
 ## Forms dialog options
+[Title](#title)
 
        --add-entry=FIELDNAME
               Add a new Entry in forms dialog
@@ -323,6 +358,7 @@
               ple %A %d/%m/%y
 
 ## Miscellaneous options
+[Title](#title)
 
        -?, --help
               Show summary of options.
@@ -342,6 +378,7 @@
        be disabled by unsetting the WINDOWID environment variable.
 
 ## EXAMPLES
+[Title](#title)
 Display a file selector with the title Select a file to remove. The file selected is returned on standard output.
 
               zenity  --title="Select a file to remove" --file-selection
